@@ -30,7 +30,7 @@ class Puppet::Provider::Rbac_api < Puppet::Provider
     https
   end
 
-  def self.make_uri(path, prefix = '/rbac-api/v1')
+  def self.make_uri(path, prefix = '/rbac-api/v2')
     uri = URI.parse("https://#{@config['server']}:#{@config['port']}#{prefix}#{path}")
     uri
   end

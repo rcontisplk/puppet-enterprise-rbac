@@ -31,4 +31,12 @@ Puppet::Type.newtype(:rbac_group) do
     desc 'The read-only ID of the group'
   end
 
+  newproperty(:display_name) do
+    desc '[Optional] The Display Name to show in PE Console. Default to role-name'
+  end
+
+  newproperty(:validate) do
+    desc '[Optional] Validate the rbac_group against the LDAP configuration. Default: false'
+  end
+
 end

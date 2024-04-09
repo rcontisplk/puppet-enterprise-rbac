@@ -1,3 +1,7 @@
+v0.1.0
+  * BREAKING CHANGE: Move to the v2 PE RBAC API. (j0sh3rs)
+  * Add support for optional ldap validation and Display Name (j0sh3rs)
+
 v0.0.10
   * Add support for user names instead of just UUIDs (dylanratcliffe)
 

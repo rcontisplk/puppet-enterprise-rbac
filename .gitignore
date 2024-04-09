@@ -3,3 +3,6 @@ Gemfile.lock
 .bundle/
 spec/fixtures/
 .yardoc
+vendor/
+.ruby-version
+*.swp

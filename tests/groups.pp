@@ -1,4 +1,5 @@
 rbac_group { 'contractors':
-  ensure => 'present',
-  roles  => ['Viewers','Operators'],
+  ensure   => 'present',
+  roles    => ['Viewers','Operators'],
+  validate => false,
 }

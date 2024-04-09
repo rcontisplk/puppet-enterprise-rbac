@@ -40,8 +40,10 @@ rbac_role { 'Viewers':
 }
 
 rbac_group { 'admins':
-  ensure => 'present',
-  roles  => ['Administrators'],
+  ensure       => 'present',
+  roles        => ['Administrators'],
+  display_name => 'Global Admins',
+  validate     => false
 }
 
 ```
