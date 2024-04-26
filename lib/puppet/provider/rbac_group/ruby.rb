@@ -53,7 +53,7 @@ Puppet::Type.type(:rbac_group).provide(:ruby, :parent => Puppet::Provider::Rbac_
     group = {
       'login'        => resource[:name],
       'role_ids'     => role_ids,
-      'display_name' => display_name || resource[:name]
+      'display_name' => display_name || resource[:name],
       'validate'     => validate || false,
     }
     Puppet::Provider::Rbac_api::post_response('/groups', group)
